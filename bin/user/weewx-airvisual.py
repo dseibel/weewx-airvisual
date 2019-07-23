@@ -1,3 +1,7 @@
+# weewx data service to read air quality information from the airvisual api
+# Dan Seibel, July 2019
+
+
 import syslog
 import weewx
 import requests
