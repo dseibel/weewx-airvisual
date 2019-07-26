@@ -6,7 +6,7 @@ import syslog
 import weewx
 import requests
 from weewx.wxengine import StdService
-__version__ = 0.2
+__version__ = 0.3
 
 '''
 
@@ -102,7 +102,7 @@ class AQService(StdService):
 
         try:
             aqi = response['data']['current']['pollution']['aqius']
-            syslog.syslog(syslog.LOG_DEBUG, "weewx-airvisual: aqi value: '%s'" % aqi)
+            syslog.syslog(syslog.LOG_INFO, "weewx-airvisual: aqi value: '%s'" % aqi)
 
             # record values to database
 
